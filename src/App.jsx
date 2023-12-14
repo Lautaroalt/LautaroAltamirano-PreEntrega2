@@ -8,9 +8,10 @@ import './App.css';
 
 
 function App() {
+
   return (
     
-    
+    <CartProvider>
     <BrowserRouter>
     <NavBar/>
     <Routes>
@@ -20,6 +21,7 @@ function App() {
       <Route path="*" element={<>404</>}></Route>
     </Routes>
     </BrowserRouter>
+    </CartProvider>
   );
          
   
